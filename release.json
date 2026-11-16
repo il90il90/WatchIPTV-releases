@@ -1,0 +1,20 @@
+{
+  "tag": "v1.0.1-26634011",
+  "title": "WatchIPTV 1.0.1",
+  "package": "com.il90.watchiptv",
+  "files": [
+    {
+      "name": "WatchIPTV-phone-v1.0.1-26634011.apk",
+      "stable": "WatchIPTV-phone.apk"
+    },
+    {
+      "name": "WatchIPTV-tv-v1.0.1-26634011.apk",
+      "stable": "WatchIPTV-tv.apk"
+    },
+    {
+      "name": "WatchIPTV-watch-v1.0.1-26634011.apk",
+      "stable": "WatchIPTV-watch.apk"
+    }
+  ],
+  "notes": "WatchIPTV 1.0.1 for phone, Android TV and Wear OS.\n\n| file | what |\n|---|---|\n| `WatchIPTV-phone-v1.0.1-26634011.apk` | phone (Android 8.0+) |\n| `WatchIPTV-tv-v1.0.1-26634011.apk` | Android TV (Android 8.0+) |\n| `WatchIPTV-watch-v1.0.1-26634011.apk` | watch (Wear OS 3+) |\n\nInstall **all from this same release**. The phone and the watch only pair when both halves share one signing key, which these do. The TV pairs over the home Wi-Fi with a code on its screen; see the Devices screen on the phone.\n\nWatch, over ADB: `adb connect <watch-ip>:5555 && adb -s <watch-ip>:5555 install -r WatchIPTV-watch-v1.0.1-26634011.apk`\n\nTV, over ADB: `adb connect <tv-ip>:5555 && adb -s <tv-ip>:5555 install -r WatchIPTV-tv-v1.0.1-26634011.apk`\n\nThe files named without a version (`WatchIPTV-phone.apk`, `WatchIPTV-tv.apk`, `WatchIPTV-watch.apk`) are the same ones, for always-latest links.\n"
+}
